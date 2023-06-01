@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>fvhmi</title>
+    <title>Fahmi Amiruddin Nafi</title>
     <meta name="description" content="Fahmi Amiruddin Nafi" />
     <meta name="keywords" content="Fahmi Amiruddin Nafi" />
     <meta name="author" content="Fahmi Amiruddin Nafi" />
@@ -634,9 +634,6 @@
     <script>
       $(document).ready(async function() {
         let repos = await $.getJSON('https://api.github.com/users/fahmipotlot/repos?sort=created&direction=desc&per_page=4');
-
-        console.log(repos);
-
         for (let repo of repos) {
           $('.recent-work').append('<li class="mt-2 inline-block mr-2 md:block md:mr-0"><a href="'+repo.svn_url+'" target="_blank" class="no-underline hover:underline text-white">'+repo.description+'</a></li>');
         }
